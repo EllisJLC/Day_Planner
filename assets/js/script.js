@@ -30,8 +30,9 @@ function fill_spaces(content) {
   for (i = 0; i< 9; i++) {
     let index = 9+i;
     let tag = "#"+index;
-    if (tag === "#9") {
-      tag = "#09";
+    if (tag.length===2) {
+      tag = "#0" + index;
+      console.log(tag)
     }
     if (index<moment().format("H")) { // Format colour
       let box = tag+"-box";

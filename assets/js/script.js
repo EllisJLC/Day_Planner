@@ -8,7 +8,10 @@ let currentHour = moment().format("HH:mm");
 dayTime.text(moment().format("dddd, MMMM Do, YYYY h:mm A")); // Displays date and time
 
 setInterval(function () { // Reloads date and time every minute.
-  dayTime.text (moment().format("dddd, MMMM Do, YYYY h:mm A"));
+  dayTime.text (moment().format("dddd, MMMM Do, YYYY h:mm A")); // Edit 
+  if (moment().format("mm") === "00") {
+    reload_colours();
+  }
 }, 1000)
 
 let content = []; // Initiate data storage
@@ -45,6 +48,27 @@ function fill_spaces(content) {
       $(box).addClass("future");
     }
     $(tag).text(content[i]);
+  }
+}
+
+function reload_colours() {
+  for (i = 0; i< 9; i++) {
+    let index = 9+i;
+    let tag = "#"+index;
+    if (tag.length===2) {
+      tag = "#0" + index;
+      console.log(tag)
+    }
+    if (index<moment().format("H")) { // Format colour
+      let box = tag+"-box";
+      $(box).addClass("past");
+    } else if (index == moment().format("H")) {
+      let box = tag+"-box";
+      $(box).addClass("present");
+    } else {
+      let box = tag+"-box";
+      $(box).addClass("future");
+    }
   }
 }
 

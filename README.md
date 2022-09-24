@@ -23,7 +23,7 @@ To practice the use of Bootstrap and Jquery and their applications.
 ![Site preview](./assets/images/preview.png)
 
 ## Installation
-1. Run index.html file.
+1. Run index.html file using the link,  https://ellisjlc.github.io/Day_Planner/
 2. Select target time to update.
 3. Edit text in text area.
 4. Select the save button.

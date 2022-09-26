@@ -7,8 +7,9 @@ A simple program run to note day tasks during work hours.
 1. [Motivation](#motivation)
 2. [Images](#images)
 3. [Installation](#installation)
-4. [Credits](#credits)
-5. [License](#license)
+4. [Devices Used](#Devices_Used)
+5. [Credits](#credits)
+6. [License](#license)
 
 ## Motivation
 To practice the use of Bootstrap and Jquery and their applications.
@@ -28,6 +29,10 @@ To practice the use of Bootstrap and Jquery and their applications.
 3. Edit text in text area.
 4. Select the save button.
 5. The input in the text area will be saved into local storage.
+
+## Devices_Used
+- Bootstrap
+- Jquery
 
 ## Credits
 Starting HTML, CSS, and JavaScript provided by Xandromus https://github.com/coding-boot-camp

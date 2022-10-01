@@ -20,7 +20,7 @@ let content = []; // Initiate data storage
 if (localStorage.getItem("slot-0") === null) {
   for (i = 0; i < 9; i++) {
     let new_store_key = "slot-"+i;
-    localStorage.setItem(new_store_key,"Empty"); 
+    localStorage.setItem(new_store_key,""); 
   }
 } 
 
